@@ -14,7 +14,6 @@ var_dump($name);
 // menghapus data dari index yang dipilih
 unset($name[1]);
 var_dump($name);
-var_dump($name);
 // menambahkan data array
 $name[] = "Asrofi";
 var_dump($name);
@@ -22,13 +21,15 @@ var_dump($name);
 var_dump(count($name));
 
 $indra = [
-  "id" => 'Indra',
-  "Name" => "Indra Wijaya",
-  "Age" => 19,
-  "addres" => [
-    "city" => "Kaltim",
-    "country" => "Indonesia"
+  [
+    "id" => 'Indra',
+    "Name" => "Indra Wijaya",
+    "Age" => 19,
+    "addres" => [
+      "city" => "Kaltim",
+      "country" => "Indonesia"
+    ]
   ]
 ];
 
-var_dump($indra["addres"]['country']);
+var_dump($indra[0]["addres"]['country']);
