@@ -15,7 +15,7 @@ function sum(int $first, int $last)
   $total = $first + $last;
   echo "Pertambahan Dari $first + $last = $total" . PHP_EOL;
 }
-sum("10", "10");
+sum("11", "10");
 sum(10, 10);
 sum(true, false);
 
@@ -25,8 +25,8 @@ function sumAll(...$values)
   $total = 0;
   foreach ($values as $value) {
     $total += $value;
-    // echo $total . PHP_EOL;
   }
+  // var_dump($values);
   echo "Totalnya adalah " . implode("+", $values) . " = $total" . PHP_EOL;
 }
 

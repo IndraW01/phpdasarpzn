@@ -30,6 +30,7 @@ foreach ($persons as $key => $value) {
 }
 
 foreach ($persons as $key) {
+  var_dump($key);
   foreach ($key as $x) {
     echo $x . PHP_EOL;
   }
