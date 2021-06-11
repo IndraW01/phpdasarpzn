@@ -9,6 +9,4 @@ function addTodolist(string $todo)
   $number = count($todoList) + 1;
 
   $todoList[$number] = $todo;
-
-  return $todoList;
 }

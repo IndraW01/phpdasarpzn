@@ -5,4 +5,6 @@ require_once "../logic/addTodolist.php";
 
 $todoList[1] = "PHP OOP";
 addTodolist("PHP COMPOSER");
-var_dump(addTodolist("PHP COMPOSER ADVNACE"));
+addTodolist("PHP COMPOSER EXPERT");
+
+var_dump($todoList);
